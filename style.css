@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+main{
+    max-width: 1200px;
+    margin: auto;
+}
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+header{
+    height : 100px;
+}
+header a{
+    font-size: 14px;
+    line-height: 100px;
+}
+header figure{
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+#aide-alignement{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+nav{
+    margin: 0;
+    padding: 0;
+    float: right;
+    list-style-type: none;
+}
+nav ul{
+    margin: 0;
+}
+nav li{
+    display: inline;
+    padding-right: 40px;
+}
+nav a{
+    color: black;
+
+}
+#inscription{
+    float: right;
+}
+footer{
+    height: 180px;
+    background-color: #f2f2f2;
+    font-size: 12px;
+}
+footer h3{
+    margin-top: 40px;
+}
+footer a{
+    margin-top: 10px;
+}
+#footer-section{
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+}
+#footer-section div{
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+}
