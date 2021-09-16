@@ -5,7 +5,8 @@
         <title>Reservia</title>
         <script src="https://kit.fontawesome.com/24038b89eb.js" crossorigin="anonymous"></script>
         <link rel="icon" href="images/logo/favicon.svg">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" media="screen and (min-width: 901px)" href="style.css" />
+        <link rel="stylesheet" media="screen and (max-width: 900px)" href="style-mobile.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -16,15 +17,15 @@
                 <figure>
                     <img src="images/logo/Reservia.svg" alt="logo">
                 </figure>
+                <a href="" id="inscription">S'inscrire</a>
                 <nav>
                     <ul>
-                        <li><a href="#ancre-hebergements">Hébergements</a></li>
+                        <li><a href="#ancre-hebergements"></a>Hébergements</a></li>
                         <li><a href="#ancre-activites">Activités</a></li>
                     </ul>
                 </nav>
-                <a href="" id="inscription">S'inscrire</a>
             </header>
-            <section id="en-tete">
+            <section class="en-tete">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
                 <div id="recherche">
@@ -34,10 +35,11 @@
                     <input type="text" placeholder="Marseille, France" id="recherche-barre">
                     <button id="recherche-button">
                         <p>Rechercher</p>
+                        <i class="fas fa-search"></i>
                     </button>
                 </div>
                 <div class="filtres"> <!--Barre de filtres-->
-                    <p id="filtresTitre">Filtres</p>
+                    <p>Filtres</p>
                     <div class="filtresBox">
                         <div>
                             <i class="fas fa-money-bill-wave"></i>
@@ -63,7 +65,7 @@
                         <p>Animaux autorisés</p>
                     </div>
                 </div>
-                <div class="dispoLogements">
+                <div class="dispo-logements">
                     <div>
                         <i class="fas fa-info"></i>
                     </div>
@@ -233,7 +235,7 @@
                 </aside>
             </section>
             <section id="ancre-activites">
-                <h2 class="activites-titre">Activités à Marseille</h2>
+                <h2 id="activites-titre">Activités à Marseille</h2>
                 <div class="activites">
                     <a href="">
                         <figure>
