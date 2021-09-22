@@ -14,7 +14,7 @@ a{
     text-decoration: none;
 }
 h2{
-    font-size: 18px;
+    font-size: 1.2em;
     margin-top: 35px;
     margin-bottom: 25px;
 }
@@ -23,19 +23,18 @@ p, figure{
 }
 
 
+
 /*Header*/
 
 header{
+    max-width: 1200px;
+    margin: auto;
     height : 100px;
     display: flex;
     align-items: center;
 }
 header a{
-    font-size: 14px;
-    order: 3;
-}
-header figure{
-    margin: 0;
+    order: 1;
 }
 nav{
     list-style-type: none;
@@ -54,17 +53,16 @@ nav li{
     display: inline;
     padding-right: 20px;
     padding-left: 20px;
-    border-top: 1px solid white;
+    border-top: 2px solid white;
 }
 nav li:hover{ 
-    border-top: 1px solid #0065fc;
+    border-top: 2px solid #0065fc;
 }
 nav li:hover a{
     color: #0065fc;
-
+    font-weight: 500;
 }
 #inscription{
-    border-top: 1px solid white;
     color: #0065fc;
     font-weight: bold;
 }
@@ -107,7 +105,6 @@ nav li:hover a{
     font-family: 'Raleway';
     font-weight: bold;
     text-align: center;
-    height: 40px;
     margin: 0;
     padding: 0;
 }
@@ -120,14 +117,17 @@ nav li:hover a{
 .filtres{
     margin-top: 25px;
     display: flex;
-    width: 780px;
-    height: 42px;
-    justify-content: space-between;
+    max-width: 900px;
+    justify-content: flex-start;
     font-weight: 600;
     flex-wrap: wrap;
     line-height: 42px;
 }
+#filtres-titre{
+    margin-right: 5%;
+}
 .filtresBox{
+    margin: 0 3% 15px 0;
     display: flex;
     height: 42px;
     border-radius: 90px;
@@ -168,6 +168,7 @@ nav li:hover a{
     display: flex;
 }
 .dispo-logements div{
+    flex-shrink: 0;
     font-size: 10px;
     border: 1px solid #d9d9d9;
     width: 20px;
@@ -194,21 +195,20 @@ nav li:hover a{
 .resultats article{
     background-color: #f2f2f2;
     width: 60%;
-    height: 520px;
+    min-height: 520px;
     border-radius: 14px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 3% 0 3%;
 }
 .hebergements-liste{
-    height: 370px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-between;
+    align-items: space-between;
 }
 .hebergements-liste a{
     width: 210px;
     height: 160px;
+    margin-bottom: 30px;
     background-color: white;
     border-radius: 15px;
     border: 4px solid white;
@@ -244,10 +244,11 @@ nav li:hover a{
     color: #0065fc;
 }
 #afficher-plus{
-    margin-top: 25px;
+    margin: 0 0 25px 0;
     font-size: 15px;
     font-weight: bold;
 }
+
 /*Animation hover*/
 .hebergements-liste a:hover{
     transform: scale(1.05, 1.05);
@@ -258,10 +259,9 @@ nav li:hover a{
 .resultats aside{
     background-color: #f2f2f2;
     width: 25%;
-    height: 520px;
     border-radius: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 3% 0 3%;
+    max-height: 520px;
 }
 #populaires-titre{
     display: flex;
@@ -271,15 +271,15 @@ nav li:hover a{
     margin-left: auto;
 }
 .populaires-liste{
-    height: 410px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
-    align-content: space-between;
+    align-items: space-between;
 }
 .populaires-liste a{
-    width: 100%;
+    width: calc(100%-4px);
     height: 110px;
+    margin-bottom: 30px;
     background-color: white;
     border-radius: 15px;
     border: 4px solid white;
@@ -318,6 +318,7 @@ nav li:hover a{
     font-size: 13px;
     color: #0065fc;
 }
+
 /*Animation hover*/
 .populaires-liste a:hover{
     transform: scale(1.05, 1.05);
@@ -326,13 +327,15 @@ nav li:hover a{
 /*Activités*/
 
 .activites{
-    height: 380px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .activites a, .activites-groupe{
     width: 270px;
+}
+.activites-groupe a{
+    width: 100%;
 }
 .activites figure{
     height: 380px;
@@ -341,6 +344,7 @@ nav li:hover a{
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
 .activites img{
     object-fit: cover;
@@ -356,23 +360,17 @@ nav li:hover a{
     position: absolute;
     bottom: 0;
     background-color: white;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    font-size: 13px;
+    font-size: 1em;
     font-weight: bold;
-    transition: transform   250ms ease;
 }
 .activites-groupe{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.activites-groupe .grand{
-    height: 200px;
-}
-.activites-groupe .petit{
-    height: 140px;
-}
+
+/*Animation hover*/
+
 .activites figure:hover img{
     transform: scale(1.1,1.1);
 }
@@ -380,9 +378,8 @@ nav li:hover a{
 /*Footer*/
 
 footer{
-    height: 180px;
     background-color: #f2f2f2;
-    font-size: 12px;
+    font-size: 0.8em;
 }
 footer h3{
     margin-top: 40px;
@@ -393,11 +390,200 @@ footer a{
 #footer-section{
     max-width: 1200px;
     margin: auto;
-    height: 100%;
     display: flex;
+    padding-bottom: 30px;
 }
 #footer-section div{
     display: flex;
     flex-direction: column;
     width: 34%;
+}
+
+@media screen and (min-width:901px) {
+    .activites-groupe .grand{
+        height: 200px;
+    }
+    .activites-groupe .petit{
+        height: 140px;
+    }
+}
+@media screen and (min-width:601px) and (max-width: 1280px) {
+    main{
+        margin: 0 3% 0 3%;
+    }
+    header{
+        margin: 0 3% 0 3%;
+    }
+    #footer-section{
+        margin-left: 3%;
+    }
+    .activites{
+        flex-wrap: wrap;
+    }
+    .activites figure{
+        height: 250px;
+    }
+    .activites a, .activites-groupe{
+        width: 48%;
+    }
+    .activites-groupe a{
+        width: 100%;
+    }
+    .activites-groupe .grand{
+        height: 110px;
+    }
+    .activites-groupe .petit{
+        height: 110px;
+    }
+}
+@media screen and (max-width:900px) {
+    .resultats article{
+        width: 94%;
+    }
+    .resultats aside{
+        order: -1;
+        width: 94%;
+    }
+    .resultats{
+        flex-direction: column;
+    }
+    .resultats aside{
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 600px) {
+    header{
+        margin-top: 10px;
+        height : 100px;
+        display:flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    header figure{
+        margin-left: 5%;
+    }
+    nav{
+        margin: 0;
+        width: 100%;
+        height: 40px;
+    }
+    nav ul{
+        margin: 0;
+        margin: 0;
+        padding: 0;
+        height: 40px;
+        display: flex;
+        justify-content: space-around;
+    }
+    nav li{
+        line-height: 40px;
+        margin: 0;
+        height: 40px;
+        width: 100%;
+        text-align: center;
+        list-style-type: none;
+        border-top: 0;
+        border-bottom: 3px solid #D9D9D9;
+    }
+    nav li:hover a{ 
+        color: #0065fc;  
+    }
+    nav li:hover{
+        border-top: 0;
+        border-bottom: 3px solid #0065fc;
+    }
+    #inscription{
+        order: 0;
+        margin-right: 5%;
+        margin-left: auto;
+        color: #0065fc;
+        font-weight: bold;
+    }
+
+    /* Recherche*/
+
+    #en-tete{
+        margin: 0 5% 0 5%;
+    }
+
+    #recherche{
+        width: 100%;
+        justify-content: space-between;
+        box-shadow: 0 0 0 2px #f2f2f2 inset;
+        border-radius: 15px;
+        height: 50px;
+    }
+    #recherche-barre{
+        border: 0;
+        border-top: 2px solid #f2f2f2;
+        border-bottom: 2px solid #f2f2f2;
+        width: 100%;
+    }
+    #recherche-icone{
+        line-height: 50px;
+        width: 50px;
+        flex-shrink: 0;
+    }
+    #recherche-button{
+        line-height: 50px;
+        width: 50px;
+        border-radius: 15px;
+        flex-shrink: 0;
+    }
+    #recherche-button i{
+        display: block;
+    }
+    #recherche-button p{
+        display: none;
+    }
+
+    /* Hébergements */
+
+    .resultats aside{
+        padding: 0 5% 0 5%;
+        width: 90%;
+        border-radius: 0;
+    }
+    .resultats article{
+        padding: 0 5% 0 5%;
+        width: 90%;
+        background-color: transparent;
+    }
+    .hebergements-liste a{
+        width: 100%;
+        height: 200px;
+    }
+    .hebergements-liste img{
+        height: 135px;
+    }
+
+    /* Activites */
+
+    .activites a, .activites-groupe{
+        width: 100%;
+    }
+    .activites figure{
+        height: 180px;
+    }
+    .activites{
+        flex-direction: column;
+        width: 90%;
+        margin: 0 5% 0 5%;
+    }
+    #activites-titre{
+        margin-left: 5%;
+    }
+
+    /* Footer */
+
+    footer{
+        font-size: 0.9em;
+    }
+    #footer-section{
+        flex-direction: column;
+        margin-left: 5%;
+    }
+    #footer-section div{
+        width: 100%;
+    }
 }

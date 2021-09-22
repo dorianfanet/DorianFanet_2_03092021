@@ -3,32 +3,32 @@
     <head>
         <meta charset="utf-8">
         <title>Reservia</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://kit.fontawesome.com/24038b89eb.js" crossorigin="anonymous"></script>
         <link rel="icon" href="images/logo/favicon.svg">
-        <link rel="stylesheet" media="screen and (min-width: 901px)" href="style.css" />
-        <link rel="stylesheet" media="screen and (max-width: 900px)" href="style-mobile.css" />
+        <link rel="stylesheet" href="style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
-    <body>
-        <main>
-            <header>
-                <figure>
-                    <img src="images/logo/Reservia.svg" alt="logo">
-                </figure>
-                <a href="" id="inscription">S'inscrire</a>
-                <nav>
-                    <ul>
-                        <li><a href="#ancre-hebergements"></a>Hébergements</a></li>
-                        <li><a href="#ancre-activites">Activités</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <section class="en-tete">
+    <body><!--Header-->
+        <header>
+            <figure>
+                <img src="images/logo/Reservia.svg" alt="logo">
+            </figure>
+            <a href="" id="inscription">S'inscrire</a>
+            <nav>
+                <ul>
+                    <li><a href="#ancre-hebergements">Hébergements</a></li>
+                    <li><a href="#ancre-activites">Activités</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main> <!--En-tête, titre, barre de recherche, filtres et nombre de logements disponibles-->
+            <section id="en-tete">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
-                <div id="recherche">
+                <div id="recherche"> <!--Barre de recherche-->
                     <div id="recherche-icone">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
@@ -38,8 +38,8 @@
                         <i class="fas fa-search"></i>
                     </button>
                 </div>
-                <div class="filtres"> <!--Barre de filtres-->
-                    <p>Filtres</p>
+                <div class="filtres"> <!--Filtres-->
+                    <p id="filtres-titre">Filtres</p>
                     <div class="filtresBox">
                         <div>
                             <i class="fas fa-money-bill-wave"></i>
@@ -65,15 +65,15 @@
                         <p>Animaux autorisés</p>
                     </div>
                 </div>
-                <div class="dispo-logements">
+                <div class="dispo-logements"> <!--Nombre de logements disponibles-->
                     <div>
                         <i class="fas fa-info"></i>
                     </div>
                     <p>Plus de 500 logements disponibles dans cette ville</p>
                 </div>
             </section>
-            <section class="resultats" id="ancre-hebergements">
-                <article>
+            <section class="resultats" id="ancre-hebergements"> <!--Résultats de la recherche : liste des hébergements et hébergements populaires-->
+                <article> <!--Hébergements disponibles-->
                     <h2>Hébergements à Marseille</h2>
                     <div class="hebergements-liste">
                         <a href="index.html">
@@ -175,7 +175,7 @@
                     </div>
                     <p id="afficher-plus"><a href="">Afficher plus</a></p>
                 </article>
-                <aside>
+                <aside> <!--Hébergements populaires-->
                     <div id="populaires-titre">
                         <h2>Les plus populaires</h2>
                         <div>
@@ -234,45 +234,45 @@
                     </div>
                 </aside>
             </section>
-            <section id="ancre-activites">
+            <section id="ancre-activites"> <!--Activités-->
                 <h2 id="activites-titre">Activités à Marseille</h2>
                 <div class="activites">
                     <a href="">
                         <figure>
-                            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Calanques de Marseille ensoleillées"/>
+                            <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Calanques de Marseille ensoleillées"/>
                             <figcaption>Vieux Port</figcaption>
                         </figure>
                     </a>
                     <div class="activites-groupe">
                         <a href="">
                             <figure class="grand">
-                                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Calanques de Marseille ensoleillées"/>
+                                <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Calanques de Marseille ensoleillées"/>
                                 <figcaption>Fort de Pomègues</figcaption>
                             </figure>
                         </a>
                         <a href="">
                             <figure class="petit">
-                                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Calanques de Marseille ensoleillées"/>
+                                <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Calanques de Marseille ensoleillées"/>
                                 <figcaption>Îles du Frioul</figcaption>
                             </figure>
                         </a>
                     </div>
                     <a href="">
                         <figure>
-                            <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques de Marseille ensoleillées"/>
+                            <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques de Marseille ensoleillées"/>
                             <figcaption>Parc National des Calanques</figcaption>
                         </figure>
                     </a>
                     <div class="activites-groupe">
                         <a href="">
                             <figure class="petit">
-                                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Calanques de Marseille ensoleillées"/>
+                                <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Calanques de Marseille ensoleillées"/>
                                 <figcaption>Notre-Dame-de-la-Garde</figcaption>
                             </figure>
                         </a>
                         <a href="">
                             <figure class="grand">
-                                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Calanques de Marseille ensoleillées"/>
+                                <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Calanques de Marseille ensoleillées"/>
                                 <figcaption>Parc Longchamps</figcaption>
                             </figure>
                         </a>
@@ -280,7 +280,7 @@
                 </div>
             </section>
         </main>
-        <footer>
+        <footer> <!--Footer-->
             <div id="footer-section">
                 <div>
                     <h3>À propos</h3>
