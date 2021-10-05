@@ -86,8 +86,6 @@ nav li:hover{
 nav li:hover a{
     font-weight: 500;
 }
-#inscription{
-}
 
 /*Button de rechercher*/
 
@@ -358,7 +356,7 @@ footer a{
 }
 
 /* Version intermediare entre mobile et desktop */
-@media screen and (min-width:481px) and (max-width: 1280px) {
+@media screen and (min-width: 481px) and (max-width: 1280px) {
     main{
         margin: 0 3% 0 3%;
     }
@@ -481,7 +479,7 @@ footer a{
     #recherche-button i{
         display: block;
     }
-    #recherche-button p{
+    #recherche-button div{
         display: none;
     }
 
