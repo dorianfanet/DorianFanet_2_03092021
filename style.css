@@ -378,10 +378,7 @@ footer a{
     .activites-groupe a{
         width: 100%;
     }
-    .activites-groupe .grand{
-        height: 110px;
-    }
-    .activites-groupe .petit{
+    .activites-groupe .grand, .activites-groupe .petit{
         height: 110px;
     }
 }
@@ -479,7 +476,7 @@ footer a{
     #recherche-button i{
         display: block;
     }
-    #recherche-button div{
+    #recherche-button span{
         display: none;
     }
 
@@ -514,6 +511,9 @@ footer a{
     }
     #activites-titre{
         margin-left: 5%;
+    }
+    .activites-groupe .grand, .activites-groupe .petit{
+        height: 180px;
     }
 
     /* Footer */
